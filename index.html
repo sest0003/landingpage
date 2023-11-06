@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+</head>
+ <title></title>
+</head>
+<body class="blur">
+
+ <div class="big-container">
+
+  <div class="container-left" id="container-left">
+    <h2 class="tabelHeader">Allsvenskan:</h2>
+  
+    <div id="allsvenskan" class="teamlist">Mjölby</div>
+
+    <div id="error">
+   
+    </div>
+  
+  </div>
+
+
+ <div class="container-center">
+
+    <div id="icons">
+
+    <i class="faFx fa fa-pencil-square fa-5x" id="notesBtn" aria-hidden="true"></i>
+
+    <i id="todoBtn" class="faFx fa fa-check-square fa-5x" aria-hidden="true"></i>
+
+    <i id="googleBtn" class="faFx fa fa-search fa-5x"></i>
+
+</div>
+
+<div id="popups">
+   
+    <div id="notes" class="hidden">
+        <h3>Notes</h3>
+
+        <textarea 
+      id="text" name="text" rows="4" style="overflow: hidden; 
+      word-wrap: break-word; resize: none; height: 281px;">
+      </textarea>  
+
+    </div> 
+
+
+    <!-- Todo -->
+      <div id="todosDiv" class="hidden">
+
+    <h3 id="h2todo">To Do:</h3>
+        
+    <form action="">
+        <input id="input" type="text">
+        <button id="submit" class="btn">Do it !</button>
+    </form>
+
+    <ul id="todolist"></ul>  
+
+    <button id="toggleButton" class="btn"> Done-list ↓ </button>
+    <ul id="donelist" style="display: none;">
+        
+    <img id="deletebutton" src="images\rubbish-bin.png" alt="">
+
+    </ul>
+  
+   
+  
+</div>
+  <!--  -->
+
+    <!-- Google -->
+    <form id="googleInput" class="hidden" action="https://www.google.com/search" method="get" class="d-flex mt-3 searchbar" role="search">
+        <h3>Google</h3>
+        <input id="searchbar" type="text" name="q" placeholder="..?" required>
+        <i type="submit" class="faFx fa fa-search"></i>
+    </form>
+      <!--  -->
+
+</div>
+</div>
+
+<div class="container-right" id="container-right">
+  <h2 class="tabelHeader">Premier League:</h2>
+
+  <div id="pl" class="teamlist">Leeds</div>
+
+  <div id="error">
+
+  </div>
+
+
+</div>
+
+
+
+</div>
+
+
+ <script src="dist/index.js"></script> 
+
+
+
+</body>
+</html>

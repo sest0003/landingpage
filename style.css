@@ -1,0 +1,453 @@
+@media (max-width: 1450px) {
+   
+    body {
+        font-size: 150%;
+    }
+    .big-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url("images/hammar2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 250%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.big-container {
+    display: flex;
+}
+
+
+.container-center {
+ padding: 1em;
+ gap: 2em;
+ font-family:'Reenie Beanie';
+ font-weight: bold;
+}
+
+.container-left {
+    transition: 0.7s;
+
+    #allsvenskan{ 
+        visibility: hidden;
+        opacity: 0;
+    }
+
+    height: 0.3em;
+    width: 6em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2); 
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 0.7em;
+    font-family:'Reenie Beanie';
+    font-weight: bold;
+    font-size: 120%;
+   }
+
+   .con-left-open {
+    #allsvenskan{ 
+        visibility: visible;
+        opacity: 1;
+    }
+
+    height: 28em;
+    width: 15em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2); 
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 0.7em;
+    font-family:'Reenie Beanie';
+    font-weight: bold;
+    font-size: 120%;
+   }
+
+   .container-left:active {
+    height: 0.2em;
+    width: 5em;
+   }
+
+
+   .container-right {
+    transition: 0.7s;
+
+    #pl {
+    visibility: hidden;
+    opacity: 0;
+    }   
+
+    height: 0.3em;
+    width: 8em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2); 
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 0.7em;
+    font-family:'Reenie Beanie';
+    font-weight: bold;
+    font-size: 120%;
+   }
+
+
+   .con-right-open {
+    #pl{
+        visibility: visible;
+        opacity: 1;
+    }
+    height: 31em;
+    width: 15em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2); 
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 0.7em;
+    font-family:'Reenie Beanie';
+    font-weight: bold;
+    font-size: 120%;
+   }
+
+   .container-right:active {
+    height: 0.2em;
+    width: 7.8em; 
+   }
+
+
+#icons {
+    display: flex; 
+   justify-content: center;  
+    padding: 1em;
+    gap: 2em;
+    font-family:'Reenie Beanie';
+    font-weight: bold;
+   }
+
+
+   #popups {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+   }
+
+   #notes {
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+    border: solid 2px white;
+
+   }
+
+   #todosDiv {
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+    border: solid 2px white;
+   }
+
+   #googleInput {
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;
+    border: solid 2px white;
+   }
+
+h3 {
+    font-weight: 900;
+    text-decoration: underline;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+
+form {
+display: flex;
+gap: 10px;
+}
+
+
+#todosDiv {
+    font-family:'Reenie Beanie';
+    margin-top: 0px;
+}
+
+#form {   
+    background-color: wheat;
+    align-items: center;
+    padding: 1.0em;
+    width: 90%;
+    border: 2px solid #000; /* 1px tjock svart solid kant */ 
+    border-radius: 10px;
+    flex-wrap: wrap
+}
+
+
+#todolist{
+    background-image: url(https://static.tumblr.com/maopbtg/E9Bmgtoht/lines.png), url(https://static.tumblr.com/maopbtg/nBUmgtogx/paper.png);
+    background-repeat: repeat-y, repeat;
+    width: 90%;
+    border-radius: 10px;
+    margin: 5% -35px;
+}
+
+#donelist {
+    width: 90%;
+    display: flex;
+    padding: 0em;
+    padding-left: 90px;
+    padding-top: 5px;
+    margin-top: 0;
+    background-image: url(https://static.tumblr.com/maopbtg/E9Bmgtoht/lines.png), url(https://static.tumblr.com/maopbtg/nBUmgtogx/paper.png);
+    background-repeat: repeat-y, repeat;
+    border-radius: 10px;
+    margin: 7% -35px;
+}
+.padding {
+    padding-left: 9%;
+}
+
+#text {
+    display: flex;
+    font-family:'Reenie Beanie';
+    font-weight: 900;
+    width: 500px;
+    overflow: hidden;
+    background-color: #FFF;
+    color: #222;
+    font-size: 50px;
+    resize: none;
+    line-height: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 45px;
+    padding-bottom: 34px;
+    background-image: url(https://static.tumblr.com/maopbtg/E9Bmgtoht/lines.png), url(https://static.tumblr.com/maopbtg/nBUmgtogx/paper.png);
+    background-repeat: repeat-y, repeat;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    -webkit-box-shadow: 0px 2px 14px #000;
+    box-shadow: 0px 2px 14px #000;
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+}
+
+
+.btn {
+    font-family:'Reenie Beanie';
+    font-size: 0.8em;
+    font-weight: bold;   
+    width: 142px;
+    height: 50px;
+    border-radius: 40px;
+}
+
+.googleBtn {
+    font-weight: bold;
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#toggleButton {
+padding-inline-start: 15px;
+ margin-left: 28%;
+ transition: 0.5s;
+}
+
+
+#toggleButton:active {
+    font-size: 0.7em;
+    margin-left: 28%;
+}
+   
+#deleteButton {
+    float: right;
+  opacity: 0.4;
+}
+
+
+#submit {
+    position: relative;
+}
+
+#deletebutton {
+    margin-left: -35px;
+    width: 7%;
+    transition: 0.4s;
+}
+
+#deletebutton:active {
+    
+    width: 6%;
+   }
+
+   #deletebutton:hover {
+    width: 6%;
+   }
+
+
+
+#input {  
+    font-family:'Reenie Beanie';
+    font-weight: 900;
+    border-radius: 40px;
+    width: 352px;
+    height: 46px;
+    font-size: 40px;
+}
+
+li {
+    margin-top: -3px;
+    font-size: 37px;
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    margin-left: -36px;
+  }
+  
+  input {
+    width: 20px;
+    height: 20px;
+  }
+
+
+input[type="text"] {
+    padding-left: 10px; 
+  }
+
+#searchbar {  
+    font-family:'Reenie Beanie';
+    font-weight: 900;
+    border-radius: 40px;
+    width: 352px;
+    height: 46px;
+    font-size: 40px;
+    border-radius: 10px;
+}
+
+
+#dropdown {
+    width: 100%; 
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 97px;
+  
+}
+
+
+.hidden {
+   opacity: 0;
+    pointer-events: none;
+    display: none; 
+    transition: opacity 1s;
+    
+    
+}
+
+.visible {
+    opacity: 1;
+    pointer-events: auto;
+    display: block; 
+    transition: opacity 2s;  
+}
+
+.faFx {
+    border-radius: 50px;
+    cursor: pointer;
+    user-select: none; /* För att undvika textmarkering när du klickar */
+    transition: 1s;   
+}
+
+
+.faFx:active {
+    font-size: 2em;
+    opacity: 1;
+}
+
+.faFx:hover {
+    transform: scale(.9);
+    opacity: 0.4;
+    filter: blur(5px);
+    }
+
+
+
+    /* fotbollstabeller */
+
+    .teamlist{
+        height: 14em;
+    }
+
+    #allsvenskan {
+        width: 15em;
+    }
+
+    #pl {
+        width: 15em;
+    }
+
+
+    .team {
+        display: flex;
+        border-bottom: 0.5px solid #000; 
+        border-radius: 3px;
+        padding: 5px;
+        grid-gap: 48px;
+    }
+    
+    
+    .tabelHeader{
+        display: flex;
+        justify-content: center;
+        margin-top: -0.5em;
+    }
+
+    .rank {
+     padding-left: 2em; 
+    }
+
+    .points {
+        margin-left: 10px;
+    }
+
+    .logo {
+    width: 1em;
+    height: 1em;
+    }
+
+    .arrow {
+        padding-left: 44%;
+        float: center;
+        width: 2em;
+        height: 2em;
+    }
+
+    .arrow:active {
+        padding-left: 44%;
+        float: center;
+        width: 1.9em;
+        height: 1.9em;
+    }
+
+   
+
+  
+
+
+    
+
+    
+
+
