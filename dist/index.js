@@ -42,7 +42,8 @@ form === null || form === void 0 ? void 0 : form.addEventListener("submit", func
     saveTodos();
     input.value = "";
 });
-function createTodo(todo, index) {
+function createTodo(todo) {
+    var index = 0;
     var newLi = document.createElement("li");
     //Checkbox 
     var checkbox = document.createElement("input");
@@ -223,6 +224,8 @@ function fetchLeagueData(url, container) {
     });
 }
 function populateTeams(data, container) {
+    // Rensa befintligt innehåll i containern
+    container.innerHTML = '';
     var standings = data.response[0].league.standings[0];
     standings.forEach(function (standing) {
         var teamData = standing.team;

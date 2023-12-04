@@ -56,8 +56,8 @@ form?.addEventListener("submit", function(e) {
     input.value = "";
 })
 
-function createTodo (todo: Todo,  index: number) {
-   
+function createTodo (todo: Todo) {
+    let index: number = 0;
     const newLi = document.createElement("li");
  
     //Checkbox 
@@ -279,7 +279,11 @@ toggleButton.addEventListener('click', function () {
     }
 
   
-    function populateTeams(data;, container: HTMLElement) {
+    function populateTeams(data: any, container: HTMLElement) {
+
+          // Rensa befintligt innehåll i containern
+        container.innerHTML = '';
+
         const standings = data.response[0].league.standings[0];
         standings.forEach(standing => {
             const teamData = standing.team;
